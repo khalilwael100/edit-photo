@@ -1,0 +1,65 @@
+
+body{
+    background: #333;
+}
+
+.container{
+    background: #222;
+    padding: 40px 0;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.left .img img{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+@media(max-width: 767px){
+    .left .img img{
+        width: 100%;
+        max-height: 80vh;
+    }
+}
+.left label{
+    color: white;
+    border: 2px dashed white;
+    font-weight: bold;
+    padding: 8px 30px;
+    cursor: pointer;
+}
+.left input{
+    display: none;
+}
+
+
+.right div{
+    direction: rtl;
+    padding-right: 15px;
+}
+.right label{
+    display: block;
+    color: white;
+    margin-top: 10px;
+}
+.right input{
+    width: 90%;
+}
+.right .footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.right .footer a{
+    text-decoration: none;
+    color: white;
+}
+.right .footer a, span{
+    background: #060;
+    padding: 8px 20px;
+    cursor: pointer;
+}
